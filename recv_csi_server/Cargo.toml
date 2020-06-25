@@ -1,0 +1,24 @@
+[package]
+name = "recv_csi_server"
+version = "0.1.0"
+authors = ["Sergey Mishin <sergei.a.mishin@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "2"
+actix-rt = "1"
+
+serde = "1.0.106"
+futures = "0.3.1"
+bytes = "0.5.2"
+structopt = "0.3.14"
+bincode = "1.2.1"
+
+csi-types = { path = "../csi-types" }
+
+env_logger = "0.7"
+csv = "1.1"
+# serde = { version = "1.0", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
